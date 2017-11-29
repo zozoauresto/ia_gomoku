@@ -6,25 +6,31 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/53269/CLionProjects/gomuko/include/ai/AGomukoAi.hpp
+C:/Users/53269/CLionProjects/gomuko/include/ai/AGomokuAi.hpp
 iostream
 -
-IGomukoAi.hpp
-C:/Users/53269/CLionProjects/gomuko/include/ai/IGomukoAi.hpp
+vector
+-
+sstream
+-
+IGomokuAi.hpp
+C:/Users/53269/CLionProjects/gomuko/include/ai/IGomokuAi.hpp
 
-C:/Users/53269/CLionProjects/gomuko/include/ai/GomukoAi.hpp
-AGomukoAi.hpp
-C:/Users/53269/CLionProjects/gomuko/include/ai/AGomukoAi.hpp
+C:/Users/53269/CLionProjects/gomuko/include/ai/GomokuAi.hpp
+AGomokuAi.hpp
+C:/Users/53269/CLionProjects/gomuko/include/ai/AGomokuAi.hpp
 
-C:/Users/53269/CLionProjects/gomuko/include/ai/IGomukoAi.hpp
+C:/Users/53269/CLionProjects/gomuko/include/ai/IGomokuAi.hpp
 string
 -
 
-C:/Users/53269/CLionProjects/gomuko/src/ai/GomukoAi.cpp
-../../include/ai/GomukoAi.hpp
-C:/Users/53269/CLionProjects/gomuko/include/ai/GomukoAi.hpp
+C:/Users/53269/CLionProjects/gomuko/src/ai/GomokuAi.cpp
+../../include/ai/GomokuAi.hpp
+C:/Users/53269/CLionProjects/gomuko/include/ai/GomokuAi.hpp
 
 C:/Users/53269/CLionProjects/gomuko/src/main.cpp
 iostream
 -
+../include/ai/GomokuAi.hpp
+C:/Users/53269/CLionProjects/gomuko/include/ai/GomokuAi.hpp
 

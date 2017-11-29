@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/53269/CLionProjects/gomuko/src/ai/GomukoAi.cpp" "C:/Users/53269/CLionProjects/gomuko/cmake-build-debug/CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj"
+  "C:/Users/53269/CLionProjects/gomuko/src/ai/GomokuAi.cpp" "C:/Users/53269/CLionProjects/gomuko/cmake-build-debug/CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj"
   "C:/Users/53269/CLionProjects/gomuko/src/main.cpp" "C:/Users/53269/CLionProjects/gomuko/cmake-build-debug/CMakeFiles/pbrain-gomuko.dir/src/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

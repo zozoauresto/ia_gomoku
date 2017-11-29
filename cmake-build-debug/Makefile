@@ -122,32 +122,32 @@ pbrain-gomuko/fast:
 	$(MAKE) -f CMakeFiles\pbrain-gomuko.dir\build.make CMakeFiles/pbrain-gomuko.dir/build
 .PHONY : pbrain-gomuko/fast
 
-src/ai/GomukoAi.obj: src/ai/GomukoAi.cpp.obj
+src/ai/GomokuAi.obj: src/ai/GomokuAi.cpp.obj
 
-.PHONY : src/ai/GomukoAi.obj
+.PHONY : src/ai/GomokuAi.obj
 
 # target to build an object file
-src/ai/GomukoAi.cpp.obj:
-	$(MAKE) -f CMakeFiles\pbrain-gomuko.dir\build.make CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj
-.PHONY : src/ai/GomukoAi.cpp.obj
+src/ai/GomokuAi.cpp.obj:
+	$(MAKE) -f CMakeFiles\pbrain-gomuko.dir\build.make CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj
+.PHONY : src/ai/GomokuAi.cpp.obj
 
-src/ai/GomukoAi.i: src/ai/GomukoAi.cpp.i
+src/ai/GomokuAi.i: src/ai/GomokuAi.cpp.i
 
-.PHONY : src/ai/GomukoAi.i
+.PHONY : src/ai/GomokuAi.i
 
 # target to preprocess a source file
-src/ai/GomukoAi.cpp.i:
-	$(MAKE) -f CMakeFiles\pbrain-gomuko.dir\build.make CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.i
-.PHONY : src/ai/GomukoAi.cpp.i
+src/ai/GomokuAi.cpp.i:
+	$(MAKE) -f CMakeFiles\pbrain-gomuko.dir\build.make CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.i
+.PHONY : src/ai/GomokuAi.cpp.i
 
-src/ai/GomukoAi.s: src/ai/GomukoAi.cpp.s
+src/ai/GomokuAi.s: src/ai/GomokuAi.cpp.s
 
-.PHONY : src/ai/GomukoAi.s
+.PHONY : src/ai/GomokuAi.s
 
 # target to generate assembly for a file
-src/ai/GomukoAi.cpp.s:
-	$(MAKE) -f CMakeFiles\pbrain-gomuko.dir\build.make CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.s
-.PHONY : src/ai/GomukoAi.cpp.s
+src/ai/GomokuAi.cpp.s:
+	$(MAKE) -f CMakeFiles\pbrain-gomuko.dir\build.make CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.s
+.PHONY : src/ai/GomokuAi.cpp.s
 
 src/main.obj: src/main.cpp.obj
 
@@ -185,9 +185,9 @@ help:
 	@echo ... pbrain-gomuko
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... src/ai/GomukoAi.obj
-	@echo ... src/ai/GomukoAi.i
-	@echo ... src/ai/GomukoAi.s
+	@echo ... src/ai/GomokuAi.obj
+	@echo ... src/ai/GomokuAi.i
+	@echo ... src/ai/GomokuAi.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

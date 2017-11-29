@@ -80,40 +80,40 @@ CMakeFiles/pbrain-gomuko.dir/src/main.cpp.obj.provides: CMakeFiles/pbrain-gomuko
 CMakeFiles/pbrain-gomuko.dir/src/main.cpp.obj.provides.build: CMakeFiles/pbrain-gomuko.dir/src/main.cpp.obj
 
 
-CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj: CMakeFiles/pbrain-gomuko.dir/flags.make
-CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj: ../src/ai/GomukoAi.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\53269\CLionProjects\gomuko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pbrain-gomuko.dir\src\ai\GomukoAi.cpp.obj -c C:\Users\53269\CLionProjects\gomuko\src\ai\GomukoAi.cpp
+CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj: CMakeFiles/pbrain-gomuko.dir/flags.make
+CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj: ../src/ai/GomokuAi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\53269\CLionProjects\gomuko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pbrain-gomuko.dir\src\ai\GomokuAi.cpp.obj -c C:\Users\53269\CLionProjects\gomuko\src\ai\GomokuAi.cpp
 
-CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\53269\CLionProjects\gomuko\src\ai\GomukoAi.cpp > CMakeFiles\pbrain-gomuko.dir\src\ai\GomukoAi.cpp.i
+CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\53269\CLionProjects\gomuko\src\ai\GomokuAi.cpp > CMakeFiles\pbrain-gomuko.dir\src\ai\GomokuAi.cpp.i
 
-CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\53269\CLionProjects\gomuko\src\ai\GomukoAi.cpp -o CMakeFiles\pbrain-gomuko.dir\src\ai\GomukoAi.cpp.s
+CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\53269\CLionProjects\gomuko\src\ai\GomokuAi.cpp -o CMakeFiles\pbrain-gomuko.dir\src\ai\GomokuAi.cpp.s
 
-CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj.requires:
+CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj.requires:
 
-.PHONY : CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj.requires
+.PHONY : CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj.requires
 
-CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj.provides: CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\pbrain-gomuko.dir\build.make CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj.provides.build
-.PHONY : CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj.provides
+CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj.provides: CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\pbrain-gomuko.dir\build.make CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj.provides.build
+.PHONY : CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj.provides
 
-CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj.provides.build: CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj
+CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj.provides.build: CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj
 
 
 # Object files for target pbrain-gomuko
 pbrain__gomuko_OBJECTS = \
 "CMakeFiles/pbrain-gomuko.dir/src/main.cpp.obj" \
-"CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj"
+"CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj"
 
 # External object files for target pbrain-gomuko
 pbrain__gomuko_EXTERNAL_OBJECTS =
 
 ../build/pbrain-gomuko.exe: CMakeFiles/pbrain-gomuko.dir/src/main.cpp.obj
-../build/pbrain-gomuko.exe: CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj
+../build/pbrain-gomuko.exe: CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj
 ../build/pbrain-gomuko.exe: CMakeFiles/pbrain-gomuko.dir/build.make
 ../build/pbrain-gomuko.exe: CMakeFiles/pbrain-gomuko.dir/linklibs.rsp
 ../build/pbrain-gomuko.exe: CMakeFiles/pbrain-gomuko.dir/objects1.rsp
@@ -127,7 +127,7 @@ CMakeFiles/pbrain-gomuko.dir/build: ../build/pbrain-gomuko.exe
 .PHONY : CMakeFiles/pbrain-gomuko.dir/build
 
 CMakeFiles/pbrain-gomuko.dir/requires: CMakeFiles/pbrain-gomuko.dir/src/main.cpp.obj.requires
-CMakeFiles/pbrain-gomuko.dir/requires: CMakeFiles/pbrain-gomuko.dir/src/ai/GomukoAi.cpp.obj.requires
+CMakeFiles/pbrain-gomuko.dir/requires: CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj.requires
 
 .PHONY : CMakeFiles/pbrain-gomuko.dir/requires
 

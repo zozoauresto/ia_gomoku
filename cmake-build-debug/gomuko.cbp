@@ -82,16 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/53269/CLionProjects/gomuko/include/ai/AGomukoAi.hpp">
+		<Unit filename="C:/Users/53269/CLionProjects/gomuko/include/ai/AGomokuAi.hpp">
 			<Option target="pbrain-gomuko"/>
 		</Unit>
-		<Unit filename="C:/Users/53269/CLionProjects/gomuko/include/ai/GomukoAi.hpp">
+		<Unit filename="C:/Users/53269/CLionProjects/gomuko/include/ai/GomokuAi.hpp">
 			<Option target="pbrain-gomuko"/>
 		</Unit>
-		<Unit filename="C:/Users/53269/CLionProjects/gomuko/include/ai/IGomukoAi.hpp">
+		<Unit filename="C:/Users/53269/CLionProjects/gomuko/include/ai/IGomokuAi.hpp">
 			<Option target="pbrain-gomuko"/>
 		</Unit>
-		<Unit filename="C:/Users/53269/CLionProjects/gomuko/src/ai/GomukoAi.cpp">
+		<Unit filename="C:/Users/53269/CLionProjects/gomuko/src/ai/GomokuAi.cpp">
 			<Option target="pbrain-gomuko"/>
 		</Unit>
 		<Unit filename="C:/Users/53269/CLionProjects/gomuko/src/main.cpp">
