@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/53269/CLionProjects/gomuko/include/ai/AGomukoAi.hpp
+iostream
+-
+IGomukoAi.hpp
+C:/Users/53269/CLionProjects/gomuko/include/ai/IGomukoAi.hpp
+
+C:/Users/53269/CLionProjects/gomuko/include/ai/GomukoAi.hpp
+AGomukoAi.hpp
+C:/Users/53269/CLionProjects/gomuko/include/ai/AGomukoAi.hpp
+
+C:/Users/53269/CLionProjects/gomuko/include/ai/IGomukoAi.hpp
+string
+-
+
+C:/Users/53269/CLionProjects/gomuko/src/ai/GomukoAi.cpp
+../../include/ai/GomukoAi.hpp
+C:/Users/53269/CLionProjects/gomuko/include/ai/GomukoAi.hpp
+
+C:/Users/53269/CLionProjects/gomuko/src/main.cpp
+iostream
+-
+
