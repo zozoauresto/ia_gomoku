@@ -14,24 +14,43 @@ class AGomokuAi : public IGomokuAi {
     /*
      * Variables
      */
+protected:
+    std::string about;
 
     /*
      * Constructor and destructor
      */
 public:
-    AGomokuAi() = default;
+    AGomokuAi() { about = R"(name="UNKNOWN", version="UNKNOWN", author="UNKNOWN", country="UNKNOWN")"; };
     virtual ~AGomokuAi() = default;
 
     /*
      * Methods
      */
-    //Protocol communicating device
+
+    //
+    // COMMUNICATION METHODS
+    //
+
+    //Message sending methods
 protected:
     void gomuSend(const std::string &toSend) {
         std::cout <<  toSend << std::endl;
     };
+    void gomuSendStart(bool isOk) {
+        if (isOk)
+            return gomuSend("OK - everything is good");
+        return gomuSend("ERROR message - unsupported size or other error");
+    }
+    void gomuSendTurn(int x, int y) {
+        gomuSend(x + "," + y);
+    }
+    void gomuSendAbout() {
+        gomuSend(about);
+    }
 
 public:
+    //Receiving methods
     int gomoGo() {
         std::string line;
 
@@ -75,7 +94,11 @@ public:
         }
     };
 
-    //Tools
+    //
+    // TOOLS
+    //
+
+    // Parse and split
     std::vector<unsigned int> split(const std::string &str, char delimiter) {
         std::vector<unsigned int> result;
         std::stringstream ss(str);

@@ -6,36 +6,38 @@
 
 //TODO: gomuSend est à changer (correspond à la réponse attendu par le programme)
 int GomokuAi::gomoStart(unsigned int size) {
-    gomuSend("OK Start");
+    gomuSendStart(true);
     return 0;
 }
 
-int GomokuAi::gomoTurn(unsigned int x, unsigned int y) {
-    gomuSend("OK Turn");
+int GomokuAi::gomoTurn(unsigned int ennemyX, unsigned int ennemyY) {
+    gomuSendTurn(1, 1);
     return 0;
 }
 
 int GomokuAi::gomoBegin() {
-    gomuSend("OK Begin");
+    gomuSendTurn(1, 1);
     return 0;
 }
 
 int GomokuAi::gomoInfo(const std::string &infoKey) {
-    gomuSend("OK Info");
     return 0;
 }
 
 int GomokuAi::gomoEnd() {
-    gomuSend("OK End");
     return 0;
 }
 
 int GomokuAi::gomoAbout() {
-    gomuSend("OK About");
+    gomuSendAbout();
     return 0;
 }
 
 int GomokuAi::gomoBoard(std::vector<std::string> &newBoard) {
-    gomuSend("OK Board");
+    gomuSendTurn(1, 1);
     return 0;
+}
+
+GomokuAi::GomokuAi() {
+    about = R"(name="gomukobrain", version="1.0", author="Devia", country="FR")";
 }

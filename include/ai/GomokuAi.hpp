@@ -8,7 +8,7 @@
 
 #include "AGomokuAi.hpp"
 
-class GomokuAi : public AGomokuAi {
+class GomokuAi final : public AGomokuAi {
     /*
      * Variables
      */
@@ -17,7 +17,7 @@ class GomokuAi : public AGomokuAi {
      * Constructor and destructor
      */
 public:
-    GomokuAi() = default;
+    GomokuAi();
     virtual ~GomokuAi() = default;
 
     /*
