@@ -4,19 +4,19 @@
 
 #include "../../include/ai/GomokuAi.hpp"
 
-//TODO: gomuSend est à changer (correspond à la réponse attendu par le programme)
+//TODO: gomoSend est à changer (correspond à la réponse attendu par le programme)
 int GomokuAi::gomoStart(unsigned int size) {
-    gomuSendStart(true);
+    gomoSendStart(true);
     return 0;
 }
 
 int GomokuAi::gomoTurn(unsigned int ennemyX, unsigned int ennemyY) {
-    gomuSendTurn(1, 1);
+    gomoSendTurn(1, 1);
     return 0;
 }
 
 int GomokuAi::gomoBegin() {
-    gomuSendTurn(1, 1);
+    gomoSendTurn(1, 1);
     return 0;
 }
 
@@ -29,12 +29,12 @@ int GomokuAi::gomoEnd() {
 }
 
 int GomokuAi::gomoAbout() {
-    gomuSendAbout();
+    gomoSendAbout();
     return 0;
 }
 
 int GomokuAi::gomoBoard(std::vector<std::string> &newBoard) {
-    gomuSendTurn(1, 1);
+    gomoSendTurn(1, 1);
     return 0;
 }
 

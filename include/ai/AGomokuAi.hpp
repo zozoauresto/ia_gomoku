@@ -34,19 +34,19 @@ public:
 
     //Message sending methods
 protected:
-    void gomuSend(const std::string &toSend) {
+    void gomoSend(const std::string &toSend) {
         std::cout <<  toSend << std::endl;
     };
-    void gomuSendStart(bool isOk) {
+    void gomoSendStart(bool isOk) {
         if (isOk)
-            return gomuSend("OK - everything is good");
-        return gomuSend("ERROR message - unsupported size or other error");
+            return gomoSend("OK - everything is good");
+        return gomoSend("ERROR message - unsupported size or other error");
     }
-    void gomuSendTurn(int x, int y) {
-        gomuSend(x + "," + y);
+    void gomoSendTurn(int x, int y) {
+        gomoSend(x + "," + y);
     }
-    void gomuSendAbout() {
-        gomuSend(about);
+    void gomoSendAbout() {
+        gomoSend(about);
     }
 
 public:
@@ -90,7 +90,7 @@ public:
             else if (line.find("END") != std::string::npos)
                 return gomoEnd();
             else
-                gomuSend("UNKNOWN Whoops, I didn't understood what you said! Maybe the command isn't implemented?");
+                gomoSend("UNKNOWN Whoops, I didn't understood what you said! Maybe the command isn't implemented?");
         }
     };
 

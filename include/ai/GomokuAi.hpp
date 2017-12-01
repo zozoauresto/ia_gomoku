@@ -12,6 +12,8 @@ class GomokuAi final : public AGomokuAi {
     /*
      * Variables
      */
+private:
+
 
     /*
      * Constructor and destructor
