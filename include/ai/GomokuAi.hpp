@@ -14,35 +14,37 @@
 #define OPPONENT 2
 #define NONE 0
 
+typedef struct s_data
+{
+    int play;
+    int value;
+}BoardData;
+
 class GomokuAi final : public AGomokuAi {
     /*
      * Variables
      */
 
-private:
-    typedef struct s_data
-    {
-        int play;
-        int value;
-    }BoardData;
-
+public:
     std::vector<std::vector<BoardData>> board;
 
     /*
      * Constructor and destructor
      */
 
+    int gomoStart(unsigned int size) override;
+
 public:
     GomokuAi();
     virtual ~GomokuAi() = default;
-    void setScore(unsigned int, unsigned int);
-    void setSquare(unsigned int, unsigned int);
+    void setScore(int, int);
+    void setSquare(int, int);
+
     /*
      * Methods
      */
 
 protected:
-    int gomoStart(unsigned int size) override;
     int gomoTurn(unsigned int x, unsigned int y) override;
     int gomoBegin() override;
     int gomoBoard(std::vector<std::string> &newBoard) override;
