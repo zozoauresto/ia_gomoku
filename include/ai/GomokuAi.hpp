@@ -16,7 +16,8 @@
 
 typedef struct s_data
 {
-    int play;
+    int x;
+    int y;
     int value;
 }BoardData;
 
@@ -26,7 +27,7 @@ class GomokuAi final : public AGomokuAi {
      */
 
 public:
-    std::vector<std::vector<BoardData>> board;
+    std::vector<std::vector<int>> board;
 
     /*
      * Constructor and destructor
@@ -37,8 +38,10 @@ public:
 public:
     GomokuAi();
     virtual ~GomokuAi() = default;
-    void setScore(int, int);
-    void setSquare(int, int);
+/*    void minScore(int, int);
+    void masSquare(int, int); */
+    int getValue(int x, int y);
+    bool terminate(int x, int y, int player);
 
     /*
      * Methods

@@ -10,11 +10,10 @@
 int GomokuAi::gomoStart(unsigned int size) {
     gomoSendStart(true);
 
-    std::vector<BoardData> line;
-    BoardData data;
+    std::vector<int> line;
+    int data;
     int i = 0;
-    data.play = NONE;
-    data.value = 0;
+    data = NONE;
     while (i < size)
     {
         line.push_back(data);
@@ -30,13 +29,13 @@ int GomokuAi::gomoStart(unsigned int size) {
 }
 
 int GomokuAi::gomoTurn(unsigned int ennemyX, unsigned int ennemyY) {
-    board.at(ennemyX).at(ennemyY).play = OPPONENT;
-    gomoSendTurn(1, 1);
+    board[ennemyX][ennemyY] = OPPONENT;
+//    gomoSendTurn(1, 1);
     return 0;
 }
 
 int GomokuAi::gomoBegin() {
-    gomoSendTurn(1, 1);
+//    gomoSendTurn(1, 1);
     return 0;
 }
 
@@ -61,132 +60,248 @@ int GomokuAi::gomoBoard(std::vector<std::string> &newBoard) {
 GomokuAi::GomokuAi() {
     about = R"(name="gomukobrain", version="1.0", author="Devia", country="FR")";
 }
-
-void GomokuAi::setScore(int x, int y)
+/*
+void GomokuAi::maxScore(int x, int y, int depth)
 {
-    int i = 0;
+    std::vector<BoardData> dataList;
+    BoardData data;
+    int i = y - 2;
     int j;
-    while (i < 19)
+
+    if (depth == 0)
+        return (getValue(x, y))
+    while (i < y + 3)
     {
-        j = 0;
-        while (j < 19)
+        j = x - 2;
+        while (j < x + 3)
         {
-            if (j < board.size() && i < board.size() && j >= 0 && i >= 0 && board.at(i).at(j).play == NONE)
-                setSquare(i, j);
-            else if (j < board.size() && i < board.size() && j >= 0 && i >= 0 && (board.at(i).at(j).play == OPPONENT || board.at(i).at(j).play == PLAYER))
-                board.at(i).at(j).value = 0;
+            if (j < board.size() && i < board.size() && j >= 0 && i >= 0 && board[i][j] == NONE) {
+                if (terminate(j, i, OPPONENT))
+                data.x = j;
+                data.y = i;
+                data.minScore(j, i, )
+                dataList.push_back(data);
+            }
+            else if (j < board.size() && i < board.size() && j >= 0 && i >= 0 && (board.[i][j] == OPPONENT || board[i][j] == PLAYER))
+                board[i][j] = 0;
             j++;
         }
         i++;
     }
 }
 
-void GomokuAi::setSquare(int i, int j) {
+void GomokuAi::minScore(int x, int y, int depth)
+{
+    std::vector<BoardData> data;
+    BoardData data;
+    int i = y - 2;
+    int j;
+    while (i < y + 3)
+    {
+        j = x - 2;
+        while (j < x + 3)
+        {
+            if (j < board.size() && i < board.size() && j >= 0 && i >= 0 && board[i][j] == NONE)
+            else if (j < board.size() && i < board.size() && j >= 0 && i >= 0 && (board.[i][j] == OPPONENT || board[i][j] == PLAYER))
+                board[i][j] = 0;
+            j++;
+        }
+        i++;
+    }
+}
+*/
+bool GomokuAi::terminate(int x, int y, int player)
+{
     int k;
     int len;
-    int values = 0;
     int r;
     int l;
     bool right;
     bool left;
 
-    std::cout << "i : " << i << " j : " << j << std::endl;
     k = 0;
-    while (k < 4)
-    {
+    while (k < 4) {
         r = 0;
         l = 0;
         len = 1;
         right = true;
         left = true;
-        while (len < 5)
-        {
-            switch (k)
-            {
+        while (len < 5) {
+            switch (k) {
                 case 0:
-                    if (right && j + len >= board.size())
-                    {
+                    if (right && x + len >= board.size()) {
                         r = len - 1;
                         right = false;
                     }
-                    if (right && board.at((unsigned int)i).at((unsigned int)j + len).play == OPPONENT)
-                    {
+                    if (right && board[x][y + len] != player) {
                         r = len - 1;
                         right = false;
                     }
-                    if (left && j - len < 0)
-                    {
+                    if (left && y - len < 0) {
                         l = len - 1;
                         left = false;
                     }
-                    if (left && board.at((unsigned int)i).at((unsigned int)j - len).play == OPPONENT)
-                    {
+                    if (left && board[x][y - len] != player) {
                         l = len - 1;
                         left = false;
                     }
                     break;
                 case 1:
-                    if (right && (i + len >= board.size() || j + len >= board.size()))
-                    {
+                    if (right && (x + len >= board.size() || y + len >= board.size())) {
                         r = len - 1;
                         right = false;
                     }
-                    if (right && board.at((unsigned int)i + len).at((unsigned int)j + len).play == OPPONENT)
-                    {
+                    if (right && board[x + len][y + len] != player) {
                         r = len - 1;
                         right = false;
                     }
-                    if (left && (i - len < 0 || j - len < 0))
-                    {
+                    if (left && (x - len < 0 || y - len < 0)) {
                         l = len - 1;
                         left = false;
                     }
-                    if (left && board.at((unsigned int)i - len).at((unsigned int)j - len).play == OPPONENT)
-                    {
+                    if (left && board[x - len][y - len] != player) {
                         l = len - 1;
                         left = false;
                     }
                     break;
                 case 2:
-                    if (right && i + len >= board.size())
-                    {
+                    if (right && x + len >= board.size()) {
                         r = len - 1;
                         right = false;
                     }
-                    if (right && board.at((unsigned int)i + len).at((unsigned int)j).play == OPPONENT)
-                    {
+                    if (right && board[x + len][y] != player) {
                         r = len - 1;
                         right = false;
                     }
-                    if (left && i - len < 0)
-                    {
+                    if (left && x - len < 0) {
                         l = len - 1;
                         left = false;
                     }
-                    if (left && board.at((unsigned int)i - len).at((unsigned int)j).play == OPPONENT)
-                    {
+                    if (left && board[x - len][y] != player) {
                         l = len - 1;
                         left = false;
                     }
                     break;
                 case 3:
-                    if (right && (i - len < 0 || j + len >= board.size()))
-                    {
+                    if (right && (x - len < 0 || y + len >= board.size())) {
                         r = len - 1;
                         right = false;
                     }
-                    if (right && board.at((unsigned int)i - len).at((unsigned int)j + len).play == OPPONENT)
-                    {
+                    if (right && board[x - len][y + len] != player) {
                         r = len - 1;
                         right = false;
                     }
-                    if (left && (i + len >= board.size() || j - len < 0))
-                    {
+                    if (left && (x + len >= board.size() || y - len < 0)) {
                         l = len - 1;
                         left = false;
                     }
-                    if (left && board.at((unsigned int)i + len).at((unsigned int)j - len).play == OPPONENT)
-                    {
+                    if (left && board[x + len][y - len] != player) {
+                        l = len - 1;
+                        left = false;
+                    }
+                    break;
+                default:
+                    break;
+            }
+            len++;
+        }
+        if (right)
+            r = 4;
+        if (left)
+            l = 4;
+        if (r + l + 1 >= 5)
+            return (true);
+        k++;
+    }
+    return (false);
+}
+
+int GomokuAi::getValue(int i, int j) {
+    int k;
+    int len;
+    int value = 0;
+    int r;
+    int l;
+    bool right;
+    bool left;
+
+    k = 0;
+    while (k < 4) {
+        r = 0;
+        l = 0;
+        len = 1;
+        right = true;
+        left = true;
+        while (len < 5) {
+            switch (k) {
+                case 0:
+                    if (right && j + len >= board.size()) {
+                        r = len - 1;
+                        right = false;
+                    }
+                    if (right && board[i][j + len] == OPPONENT) {
+                        r = len - 1;
+                        right = false;
+                    }
+                    if (left && j - len < 0) {
+                        l = len - 1;
+                        left = false;
+                    }
+                    if (left && board[i][j - len] == OPPONENT) {
+                        l = len - 1;
+                        left = false;
+                    }
+                    break;
+                case 1:
+                    if (right && (i + len >= board.size() || j + len >= board.size())) {
+                        r = len - 1;
+                        right = false;
+                    }
+                    if (right && board[i + len][j + len] == OPPONENT) {
+                        r = len - 1;
+                        right = false;
+                    }
+                    if (left && (i - len < 0 || j - len < 0)) {
+                        l = len - 1;
+                        left = false;
+                    }
+                    if (left && board[i - len][j - len] == OPPONENT) {
+                        l = len - 1;
+                        left = false;
+                    }
+                    break;
+                case 2:
+                    if (right && i + len >= board.size()) {
+                        r = len - 1;
+                        right = false;
+                    }
+                    if (right && board[i + len][j] == OPPONENT) {
+                        r = len - 1;
+                        right = false;
+                    }
+                    if (left && i - len < 0) {
+                        l = len - 1;
+                        left = false;
+                    }
+                    if (left && board[i - len][j] == OPPONENT) {
+                        l = len - 1;
+                        left = false;
+                    }
+                    break;
+                case 3:
+                    if (right && (i - len < 0 || j + len >= board.size())) {
+                        r = len - 1;
+                        right = false;
+                    }
+                    if (right && board[i - len][j + len] == OPPONENT) {
+                        r = len - 1;
+                        right = false;
+                    }
+                    if (left && (i + len >= board.size() || j - len < 0)) {
+                        l = len - 1;
+                        left = false;
+                    }
+                    if (left && board[i + len][j - len] == OPPONENT) {
                         l = len - 1;
                         left = false;
                     }
@@ -201,10 +316,10 @@ void GomokuAi::setSquare(int i, int j) {
         if (left)
             l = 4;
         if (r + l + 1 > 4)
-            values += (r + l + 1) - 5 + 1;
+            value += (r + l + 1) - 5 + 1;
         else
-            values += 0;
+            value += 0;
         k++;
     }
-    board.at((unsigned int)i).at((unsigned int)j).value = values;
+    return (value);
 }

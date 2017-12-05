@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/53269/CLionProjects/gomuko
+# Install script for directory: C:/Users/Philippe XU/Documents/CODE/gomoku/ia_gomoku
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/53269/CLionProjects/gomuko/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Philippe XU/Documents/CODE/gomoku/ia_gomoku/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

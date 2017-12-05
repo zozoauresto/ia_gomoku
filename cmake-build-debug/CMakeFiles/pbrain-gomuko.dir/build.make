@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\53269\CLionProjects\gomuko
+CMAKE_SOURCE_DIR = "C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\53269\CLionProjects\gomuko\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pbrain-gomuko.dir/depend.make
@@ -58,16 +58,16 @@ include CMakeFiles/pbrain-gomuko.dir/flags.make
 
 CMakeFiles/pbrain-gomuko.dir/src/main.cpp.obj: CMakeFiles/pbrain-gomuko.dir/flags.make
 CMakeFiles/pbrain-gomuko.dir/src/main.cpp.obj: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\53269\CLionProjects\gomuko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pbrain-gomuko.dir/src/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pbrain-gomuko.dir\src\main.cpp.obj -c C:\Users\53269\CLionProjects\gomuko\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pbrain-gomuko.dir/src/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pbrain-gomuko.dir\src\main.cpp.obj -c "C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku\src\main.cpp"
 
 CMakeFiles/pbrain-gomuko.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pbrain-gomuko.dir/src/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\53269\CLionProjects\gomuko\src\main.cpp > CMakeFiles\pbrain-gomuko.dir\src\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku\src\main.cpp" > CMakeFiles\pbrain-gomuko.dir\src\main.cpp.i
 
 CMakeFiles/pbrain-gomuko.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pbrain-gomuko.dir/src/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\53269\CLionProjects\gomuko\src\main.cpp -o CMakeFiles\pbrain-gomuko.dir\src\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku\src\main.cpp" -o CMakeFiles\pbrain-gomuko.dir\src\main.cpp.s
 
 CMakeFiles/pbrain-gomuko.dir/src/main.cpp.obj.requires:
 
@@ -82,16 +82,16 @@ CMakeFiles/pbrain-gomuko.dir/src/main.cpp.obj.provides.build: CMakeFiles/pbrain-
 
 CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj: CMakeFiles/pbrain-gomuko.dir/flags.make
 CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj: ../src/ai/GomokuAi.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\53269\CLionProjects\gomuko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pbrain-gomuko.dir\src\ai\GomokuAi.cpp.obj -c C:\Users\53269\CLionProjects\gomuko\src\ai\GomokuAi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\pbrain-gomuko.dir\src\ai\GomokuAi.cpp.obj -c "C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku\src\ai\GomokuAi.cpp"
 
 CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\53269\CLionProjects\gomuko\src\ai\GomokuAi.cpp > CMakeFiles\pbrain-gomuko.dir\src\ai\GomokuAi.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku\src\ai\GomokuAi.cpp" > CMakeFiles\pbrain-gomuko.dir\src\ai\GomokuAi.cpp.i
 
 CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\53269\CLionProjects\gomuko\src\ai\GomokuAi.cpp -o CMakeFiles\pbrain-gomuko.dir\src\ai\GomokuAi.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku\src\ai\GomokuAi.cpp" -o CMakeFiles\pbrain-gomuko.dir\src\ai\GomokuAi.cpp.s
 
 CMakeFiles/pbrain-gomuko.dir/src/ai/GomokuAi.cpp.obj.requires:
 
@@ -118,7 +118,7 @@ pbrain__gomuko_EXTERNAL_OBJECTS =
 ../build/pbrain-gomuko.exe: CMakeFiles/pbrain-gomuko.dir/linklibs.rsp
 ../build/pbrain-gomuko.exe: CMakeFiles/pbrain-gomuko.dir/objects1.rsp
 ../build/pbrain-gomuko.exe: CMakeFiles/pbrain-gomuko.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\53269\CLionProjects\gomuko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ..\build\pbrain-gomuko.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ..\build\pbrain-gomuko.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\pbrain-gomuko.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -136,6 +136,6 @@ CMakeFiles/pbrain-gomuko.dir/clean:
 .PHONY : CMakeFiles/pbrain-gomuko.dir/clean
 
 CMakeFiles/pbrain-gomuko.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\53269\CLionProjects\gomuko C:\Users\53269\CLionProjects\gomuko C:\Users\53269\CLionProjects\gomuko\cmake-build-debug C:\Users\53269\CLionProjects\gomuko\cmake-build-debug C:\Users\53269\CLionProjects\gomuko\cmake-build-debug\CMakeFiles\pbrain-gomuko.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku" "C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku" "C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku\cmake-build-debug" "C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku\cmake-build-debug" "C:\Users\Philippe XU\Documents\CODE\gomoku\ia_gomoku\cmake-build-debug\CMakeFiles\pbrain-gomuko.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/pbrain-gomuko.dir/depend
 

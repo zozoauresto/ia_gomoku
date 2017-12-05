@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/53269/CLionProjects/gomuko/include/ai/AGomokuAi.hpp
+C:/Users/Philippe XU/Documents/CODE/gomoku/ia_gomoku/include/ai/AGomokuAi.hpp
 iostream
 -
 vector
@@ -14,23 +14,33 @@ vector
 sstream
 -
 IGomokuAi.hpp
-C:/Users/53269/CLionProjects/gomuko/include/ai/IGomokuAi.hpp
+C:/Users/Philippe XU/Documents/CODE/gomoku/ia_gomoku/include/ai/IGomokuAi.hpp
 
-C:/Users/53269/CLionProjects/gomuko/include/ai/GomokuAi.hpp
+C:/Users/Philippe XU/Documents/CODE/gomoku/ia_gomoku/include/ai/GomokuAi.hpp
+vector
+-
+array
+-
+tuple
+-
 AGomokuAi.hpp
-C:/Users/53269/CLionProjects/gomuko/include/ai/AGomokuAi.hpp
+C:/Users/Philippe XU/Documents/CODE/gomoku/ia_gomoku/include/ai/AGomokuAi.hpp
 
-C:/Users/53269/CLionProjects/gomuko/include/ai/IGomokuAi.hpp
+C:/Users/Philippe XU/Documents/CODE/gomoku/ia_gomoku/include/ai/IGomokuAi.hpp
 string
 -
 
-C:/Users/53269/CLionProjects/gomuko/src/ai/GomokuAi.cpp
+C:/Users/Philippe XU/Documents/CODE/gomoku/ia_gomoku/src/ai/GomokuAi.cpp
+vector
+-
+tuple
+-
 ../../include/ai/GomokuAi.hpp
-C:/Users/53269/CLionProjects/gomuko/include/ai/GomokuAi.hpp
+C:/Users/Philippe XU/Documents/CODE/gomoku/ia_gomoku/include/ai/GomokuAi.hpp
 
-C:/Users/53269/CLionProjects/gomuko/src/main.cpp
+C:/Users/Philippe XU/Documents/CODE/gomoku/ia_gomoku/src/main.cpp
 iostream
 -
 ../include/ai/GomokuAi.hpp
-C:/Users/53269/CLionProjects/gomuko/include/ai/GomokuAi.hpp
+C:/Users/Philippe XU/Documents/CODE/gomoku/ia_gomoku/include/ai/GomokuAi.hpp
 
