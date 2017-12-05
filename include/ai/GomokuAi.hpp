@@ -19,7 +19,7 @@ typedef struct s_data
     int x;
     int y;
     int value;
-}BoardData;
+} MoveData;
 
 class GomokuAi final : public AGomokuAi {
     /*
@@ -38,10 +38,13 @@ public:
 public:
     GomokuAi();
     virtual ~GomokuAi() = default;
-/*    void minScore(int, int);
-    void masSquare(int, int); */
     int getValue(int x, int y);
     bool terminate(int x, int y, int player);
+
+    //Fonctions de décision des mouvement
+    MoveData decideMove(int depth);
+    int minScore(int depth, int a, int b, MoveData previousMove)
+    int maxScore(int depth, int a, int b, MoveData previousMove)
 
     /*
      * Methods

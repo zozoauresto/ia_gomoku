@@ -60,56 +60,22 @@ int GomokuAi::gomoBoard(std::vector<std::string> &newBoard) {
 GomokuAi::GomokuAi() {
     about = R"(name="gomukobrain", version="1.0", author="Devia", country="FR")";
 }
-/*
-void GomokuAi::maxScore(int x, int y, int depth)
-{
-    std::vector<BoardData> dataList;
-    BoardData data;
-    int i = y - 2;
-    int j;
 
-    if (depth == 0)
-        return (getValue(x, y))
-    while (i < y + 3)
-    {
-        j = x - 2;
-        while (j < x + 3)
-        {
-            if (j < board.size() && i < board.size() && j >= 0 && i >= 0 && board[i][j] == NONE) {
-                if (terminate(j, i, OPPONENT))
-                data.x = j;
-                data.y = i;
-                data.minScore(j, i, )
-                dataList.push_back(data);
-            }
-            else if (j < board.size() && i < board.size() && j >= 0 && i >= 0 && (board.[i][j] == OPPONENT || board[i][j] == PLAYER))
-                board[i][j] = 0;
-            j++;
-        }
-        i++;
-    }
+int GomokuAi::maxScore(int depth, int a, int b, MoveData previousMove)
+{
+    //todo: coder le maximise
 }
 
-void GomokuAi::minScore(int x, int y, int depth)
+int GomokuAi::minScore(int depth, int a, int b, MoveData previousMove)
 {
-    std::vector<BoardData> data;
-    BoardData data;
-    int i = y - 2;
-    int j;
-    while (i < y + 3)
-    {
-        j = x - 2;
-        while (j < x + 3)
-        {
-            if (j < board.size() && i < board.size() && j >= 0 && i >= 0 && board[i][j] == NONE)
-            else if (j < board.size() && i < board.size() && j >= 0 && i >= 0 && (board.[i][j] == OPPONENT || board[i][j] == PLAYER))
-                board[i][j] = 0;
-            j++;
-        }
-        i++;
-    }
+    //todo: coder le minimise
 }
-*/
+
+MoveData GomokuAi::decideMove(int depth)
+{
+    return MoveData();
+}
+
 bool GomokuAi::terminate(int x, int y, int player)
 {
     int k;
